@@ -28,7 +28,7 @@ class TestSaucedemo:
         with allure.step("Проверка авторизации"):
             try:
                 assert page.locator("#header_container > div.header_secondary_container > span").is_visible()
-                assert page.title() == "Swag Lab"
+                assert page.title() == "Swag Labs"
             except AssertionError:
                 report_page.attach_screenshot()
                 raise
